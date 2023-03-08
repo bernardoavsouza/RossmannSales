@@ -12,55 +12,58 @@ The main assumption considered in this project was 250,000 meters is a distance 
 
 # 3. Solution Strategy
 
-**Step 1: Data Description**
+### Step 1: Data Description
 
 The main objective of this section was to organize and understand raw data using descriptive statistics.
 
-**Step 2: Feature Engineering**
+### Step 2: Feature Engineering
 
 In this step, the hypotheses were defined and some features were created.
 
-**Step 3: Variable Filtering**
+### Step 3: Variable Filtering
 
 This step was responsible for dropping customers' information since we wouldn't have it for the next six weeks. Moreover, only samples of opened shops with sales above zero were selected.
 
-**Step 4: Exploratory Data Analysis**
+### Step 4: Exploratory Data Analysis
 
 This step was responsible for dropping customers' information since we wouldn't have it for the next six weeks. Moreover, only samples of opened shops with sales above zero were selected. Thereunto, three different analyses were done: univariate, bivariate, and multivariate analyses.
 
-**Step 5: Data Preparation**
+### Step 5: Data Preparation
 
 In this section, all the data was encoded and scaled to perform properly in a machine learning algorithm.
 
-**Step 6: Feature Selection**
+### Step 6: Feature Selection
 
 In this section, the Boruta algorithm was used to select the best features to be used. The selected features were chosen based on Boruta and insights gotten previously.
 
-**Step 7: Machine Learning Modelling**
+### Step 7: Machine Learning Modelling
 
 Here an average value model was considered as a benchmark since it's the simplest solution for the problem. Moreover, four models were trained and evaluated: KNN, Linear Ridge Regression, Random Forest, and XGBoost.
 
-**Step 8: Hyperparameter Fine Tunning**
+### Step 8: Hyperparameter Fine Tunning
 
 Since XGBoost seemed to be the most promising, a Random Search fine tuning algorithm was applied.
 
-**Step 9: Results Interpretation**
+### Step 9: Results Interpretation
 
 This section shows a time series of the prediction, the prediction for the whole Rossmann group, and some info about errors.
 
-**Step 10: Deployment**
+### Step 10: Deployment
 
 In this project, a local API was coded to be used to predict remotely.
 
 # 4. Top 3 Data Insights
 
 **Hypotesis 3: New competitors around should decrease sales.**
+
 **False:** New competitors raise sales.
 
 **Hypotesis 2: Stores should sell more when they are far from competitors.**
+
 **False:** There is no such a correlation between those variables.
 
 **Hypotesis 1: Stores should sell more when they are in promotion.**
+
 **False:** There is no statistical evidence that promotions raise sales
 
 # 5. Machine Learning Model Applied
